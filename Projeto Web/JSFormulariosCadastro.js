@@ -18,7 +18,6 @@ function checkInputs() {
   const usernameValue = username.value;
   const emailValue = email.value;
 
-
   if (usernameValue === "") {
     setErrorFor(username, "O nome de usuário é obrigatório.");
   } else {
@@ -99,3 +98,14 @@ function setSuccessFor(input) {
     uf.value = resposta.uf;
   }
 
+
+  function Enviar() {
+    
+    var nome = document.getElementById("username");
+
+    if (nome.value != "") {
+        alert('Cliente ' + nome.value + ' registrado com sucesso');
+    }
+
+
+}

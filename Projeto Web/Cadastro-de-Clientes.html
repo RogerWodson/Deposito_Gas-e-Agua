@@ -13,6 +13,7 @@
   <title>Cadastro de Clientes</title>
 </head>
 
+
 <body>
   <div class="container">
     <div class="header">
@@ -25,7 +26,7 @@
       <div class="identificacao">
         <div class="form-control">
           <label for="NumCelular">Celular</label>
-          <input type="text" id="NumCelular" size=5 placeholder="Celular..." />
+          <input type="tel"  id="NumCelular" size=12 placeholder="Celular..." />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
           <small>Mensagem de erro</small>
@@ -33,7 +34,7 @@
 
         <div class="form-control">
           <label for="NumTelefone">Telefone</label>
-          <input type="text" id="NumTelefone" size=5 placeholder="Telefone..." />
+          <input type="tel" id="NumTelefone" size=10 placeholder="Telefone..." />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
           <small>Mensagem de erro</small>
@@ -46,7 +47,7 @@
 
         <div class="form-control">
           <label for="cpf">CPF/CNPJ</label>
-          <input type="text" name="cpf-cnpj" id="cpf-cnpj" size=15 placeholder="CPF/CNPJ" />
+          <input type="text" name="cpf-cnpj" id="cpf-cnpj" size=25 placeholder="CPF/CNPJ" />
         </div>
 
         <div class="form-control">
@@ -79,7 +80,7 @@
 
         <div class="form-control">
           <label for="endereco">Endereço</label>
-          <input type="text" name="endereco" id="endereco" size=35 />
+          <input type="text" name="endereco" id="endereco" size=45 />
         </div>
 
         <div class="form-control">
@@ -92,17 +93,17 @@
 
         <div class="form-control">
           <label for="complemento">Complemento</label>
-          <input type="text" name="complemento" id="complemento"  size=1/>
+          <input type="text" name="complemento" id="complemento"  size=20/>
         </div>
 
         <div class="form-control">
           <label for="bairro">Bairro</label>
-          <input type="text" name="bairro" id="bairro" size=10 />
+          <input type="text" name="bairro" id="bairro" size=15 />
         </div>
 
         <div class="form-control">
           <label for="cidade">Cidade</label>
-          <input type="text" name="cidade" id="cidade" size=10 />
+          <input type="text" name="cidade" id="cidade" size=15 />
         </div>
 
         <div class="form-control">
@@ -116,9 +117,9 @@
         </div>
       </div>
 
-      <button type="submit">Salvar</button>
+      <input type="submit" class="enviar" onclick="Enviar();" value="Enviar"/>
     </form>
-  </div>
+  </div> 
 
   <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
 

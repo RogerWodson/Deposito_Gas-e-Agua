@@ -15,6 +15,7 @@
   }
   
   .container {
+    
     background-color: #fafafa;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -40,9 +41,15 @@
     margin: 20px;
    }
   
- .identificacao div, .localizacao div{
-  display:inline-flex;
+
+ .identificacao, .localizacao{
+  display:flex;
   flex-wrap: wrap;
+  margin: 50px , 0px;
+}
+.identificacao div, .localizacao div{
+  margin: 0px 15px;
+
 }
 
 
@@ -85,7 +92,7 @@
     visibility: hidden;
   }
   
-  .form button {
+  .enviar {
     background-color: #3507b3;
     border: 2px solid #3507b3;
     color: #fff;
